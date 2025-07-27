@@ -1302,9 +1302,25 @@ audio {
 
 
 
-    /*controlling tablet width*/
-    /*@media only screen and (max-width: 720px){
-    	.container {
-    		-webkit-transform: scale(0.9);
-    	}
-    }*/
+    /*controlling mobile and tablet width*/
+    @media only screen and (max-width: 768px){
+        .container {
+            padding: 0 10px;
+        }
+        .message p {
+            font-size: 20px;
+        }
+        .navbar-fixed-bottom {
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            padding: 8px;
+            font-size: 12px;
+            margin: 3px;
+        }
+        .balloon-border {
+            top: 70%;
+        }
+    }
