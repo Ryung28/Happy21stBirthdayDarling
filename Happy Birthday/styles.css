@@ -354,6 +354,9 @@ body::before {
                 inset 0 0 0 8px rgba(255, 255, 255, 0.6);
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-frame:hover {
@@ -367,6 +370,7 @@ body::before {
     height: 100%;
     object-fit: cover;
     transition: all 0.5s ease;
+    object-position: center; /* Ensures the image is centered */
 }
 
 .image-frame:hover .profile-image {
@@ -1075,6 +1079,10 @@ body::before {
     padding: 10px;
     background: linear-gradient(45deg, #ff69b4, #ff1493, #dc143c);
     animation: rotate 10s linear infinite;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes rotate {
@@ -1091,6 +1099,7 @@ body::before {
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center; /* Ensures the image is centered */
     border: 5px solid white;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -2326,6 +2335,7 @@ body::before {
     .profile-image {
         width: 180px;
         height: 180px;
+        object-position: center; /* Ensures the image is centered */
     }
     
     .gallery-container {
@@ -2354,6 +2364,10 @@ body::before {
     .image-frame {
         width: 200px;
         height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
     }
     
     .heart-burst {
@@ -2496,11 +2510,16 @@ body::before {
     .image-frame {
         width: 180px;
         height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
     }
     
     .profile-image {
         width: 150px;
         height: 150px;
+        object-position: center; /* Ensures the image is centered */
     }
     
     .photo-gallery {
